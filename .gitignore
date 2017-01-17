@@ -8,6 +8,7 @@ gradle/
 bin/
 build/
 .DS_Store
+test-output/
 
 # Package Files #
 *.jar

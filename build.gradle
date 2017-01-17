@@ -1,11 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-    }
-}
-
 apply plugin: 'java'
 
 repositories {
@@ -14,8 +6,12 @@ repositories {
 
 dependencies {
     testCompile 'org.testng:testng:6.10'
+    testCompile 'org.jmockit:jmockit:1.30'
+    testCompile 'org.yaml:snakeyaml:1.17'
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        suites 'src/test/resources/testng.yaml'
+    }
 }
