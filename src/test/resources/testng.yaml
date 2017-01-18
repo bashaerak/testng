@@ -3,6 +3,5 @@ threadCount: 4
  
 tests:
   - name: FindValue
-    parameters: { count: 10 }
     classes:
       - testng.BinarySearchTest
